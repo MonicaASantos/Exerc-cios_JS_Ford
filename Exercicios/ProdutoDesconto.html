@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProdutosDesconto</title>
+</head>
+
+<body>
+    <script>
+        // Função para calcular total a pagar
+        function calcularTotalAPagar(quantidade, precoUnitario) {
+            let total = quantidade * precoUnitario;
+            let desconto;
+
+            if (quantidade <= 5) {
+                desconto = total * 0.02;
+            } else if (quantidade <= 10) {
+                desconto = total * 0.03;
+
+            } else {
+                desconto = total * 0.05;
+            }
+
+            const TotalAPagar = total - desconto;
+            return { total, desconto, TotalAPagar };
+        }
+
+        // Função principal
+        function main(){
+            const nomeProduto = prompt("Informe o nome do protduto:");
+            const quantidade = parseInt(prompt("Informe a quantidade adquirida:"));
+            const precoUnitario = parseFloat(prompt("Informe o preço unitário do produto:"));
+
+
+            const {total, desconto, TotalAPagar } = calcularTotalAPagar(quantidade,precoUnitario);
+
+
+            alert (`Produto: ${nomeProduto}`);
+            alert(`Quantidade: ${quantidade}`);
+            alert(`Preço unitário: R$ ${precoUnitario.toFixed(2)}`);
+            alert(`Total: R$) ${total.toFixed(2)}`);
+            alert(`Desconto: R$ ${desconto.toFixed(2)}`);
+            alert(`Total a pagar: R$ ${TotalAPagar.toFixed(2)}`);
+
+        }
+
+            // Chamada da função principal
+            main();
+
+        
+
+    </script>
+
+</body>
+
+</html>

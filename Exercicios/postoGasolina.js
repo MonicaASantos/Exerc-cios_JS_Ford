@@ -1,7 +1,4 @@
 // Um posto está vendendo combustíveis com a seguinte tabela de descontos:
-
-
-
 // Álcool:
 // . até 20 litros, desconto de 3% por litro Álcool
 // . acima de 20 litros, desconto de 5% por litro
@@ -26,3 +23,10 @@
 
 //saida de dados
 // = mostrar a porcentagem de desconto se for alcool ou se for gasolina
+
+
+
+
+
+
+

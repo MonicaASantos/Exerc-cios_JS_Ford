@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DescontoFuncionario</title>
+</head>
+<body>
+    <script>
+  // Entrada de dados
+
+  const codigoCliente = parseFloat(prompt("Digite o código do cliente (1 - cliente, 2 - Funcionário, 3 - Vip):"));
+  const valorCompra = parseFloat(prompt("Digite o valor total da compra"));
+
+  // Processando dados
+  let desconto = 0;
+  switch (codigoCliente)  {
+    case 1: // Cliente comum
+    desconto = 0;
+    break;
+    case 2: // Funcionário
+    desconto = 0.1; // 10% de desconto
+    break;
+    case 3: // VIP
+    desconto = 0.05;  // 5% de desconto
+    break;
+    default:
+        alert ("Código de cliente inválido!");
+  }
+
+  const valorDesconto = valorCompra * desconto;
+  const ValorFinal = valorCompra - valorDesconto;
+
+  // Saída de dados
+  alert ("Valor total a ser pago: R$" + ValorFinal.toFixed(2));
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

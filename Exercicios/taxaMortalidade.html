@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taxaMortalidade</title>
+</head>
+
+<body>
+    <script>
+        // Função para calcular a taxa de natalidade
+        function calcularTaxaNatalidade(numCriançasNascidas, numHabitantes) {
+            return (numCriançasNascidas * 1000) / numHabitantes;
+        }
+
+        // Função para calcular a taxa de mortalidade
+        function calcularTaxaMortalidade(numObitos, numHabitantes) {
+            return (numObitos * 1000) / numHabitantes;
+        }
+
+        // Função principal
+        function main() {
+            const opcao = prompt("Digite 'N' para calcular a taxa de natalidade ou 'M' para calcular a taxa de mortalidade:").toUpperCase();
+
+            switch (opcao) {
+                case 'N':
+                    const numCriançasNascidas = parseInt(prompt("Digite o número de crianças nascidas:"));
+                    const numHabitantesNatalidade = parseInt(prompt("Digite o número total de habitantes:"));
+                    const taxaNatalidade = calcularTaxaNatalidade(numCriançasNascidas, numHabitantesNatalidade);
+                    alert(`A taxa de natalidade é: ${taxaNatalidade.toFixed(2)} por mil habitantes.`);
+                    break;
+                case 'M':
+                    const numObitos = parseInt(prompt("Digite o número de óbitos:"));
+                    const numHabitantesMortalidade = parseInt(prompt("Digite o número total de habitantes:"));
+                    const taxaMortalidade = calcularTaxaMortalidade(numObitos, numHabitantesMortalidade);
+                    alert(`A taxa de mortalidade é: ${taxaMortalidade.toFixed(2)} por mil habitantes.`);
+                    break;
+                default:
+                    alert("Opção inválida.");
+            }
+        }
+
+        // Chamada da função principal
+        main();
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

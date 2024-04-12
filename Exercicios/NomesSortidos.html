@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NomesSortidos</title>
+</head>
+
+<body>
+    <script>
+        // Declara um vetor para armazenar os nomes das 10 pessoas
+
+        var nomes = [];
+
+        // Preenche o vetor com os nomes das 10 pessoas
+        for (var i = 0; i < 10; i++) {
+            var nome = prompt("Informe o nome da " + (i + 1) + "a pessoa:");
+            nomes.push(nome);
+
+        }
+
+        // Solicita  ao usuário que informe um nome para busca
+        var nomeBusca = prompt("Informe o nome que deseja buscar:");
+        nomes.push(nome);
+        
+        // Verificar se o nome de busca está presente no vetor de nomes
+        var encontrou = false;
+        for (var i= 0; i< nomes.length; i++) {
+            if (nomes[i] === nomeBusca) {
+                encontrou = true;
+                break;
+            }
+        }
+
+        // Exibe o resultado da busca
+        if (encontrou)  {
+            alert("ACHEI");
+
+        } else {
+            alert ("NÂO ACHEI");
+        }
+       
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

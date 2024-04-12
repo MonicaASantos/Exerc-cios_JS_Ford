@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JogodeFutebol</title>
+</head>
+<body>
+                    
+ <Script> 
+                     // entrada de dados
+
+    let time1 = prompt( "Digite o nome do primeiro time:");
+    let time2 = prompt( "Digite o nome do segundo time:");
+    let placarTime1 = parseInt(prompt("Digite o placar do primeiro time"));
+    let placarTime2 = parseInt(prompt("Digite o placar do segundo time"));
+
+    // Verificar resultado do jogo
+
+    if  (placarTime1 > placarTime2) {
+        alert(`Vitória do ${time1}`);
+
+    } else if (placarTime2 > placarTime1) {
+        alert(`Vitória do ${time2}`);
+
+    } else {
+       alert("O jogo terminou em empate");
+    }
+
+</Script>
+
+
+
+
+
+
+    
+
+    
+</body>
+</html>
